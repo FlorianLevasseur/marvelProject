@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+  <title>Marvel Project</title>
+</head>
+
+<body>
+  <header class="mb-5">
+    <img class="w-100" src="img/avengers.jpg" alt="Bannière Avengers">
+    <nav class="navbar navbar-expand-lg navFont">
+      <img class="widthLogo m-auto" src="img/Logo.png" alt="Logo Marvel">
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 text-center test">
+        <p class="h1 mb-3">Deadpool</p>
+        <img class="img-fluid mb-3" src="img/profil.jpg" alt="Photo de profil Deadpool">
+        <p class="h3 mb-3">Super pouvoir : Sens de la répartie</p>
+        <p class="h3 mb-3">Nom : Wade Wilson</p>
+        <p class="h3 mb-3">Métier : Mercenaire</p>
+      </div>
+      <div class="col-8">
+        <table class="table table-bordered table-dark table-hover marvelTable">
+          <thead>
+            <tr>
+              <th colspan="3" class="text-center">Liste des supers héros</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/ironManMini.jpg" alt="Photo miniature de Iron Man" </td>
+              <td width="70%" class="h3">Iron Man</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#ironManModal">+d'infos</button>
+                <div class="modal fade" id="ironManModal" tabindex="-1" aria-labelledby="ironManModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title text-center h1 m-auto" id="ironManModalLabel">Iron Man</div>
+                      </div>
+                      <div class="modal-body">
+                        <img class="mb-3" src="img/ironMan.jpg" alt="Photo de Iron Man">
+                        <p class="h3 mb-3">Super pouvoir : Armure</p>
+                        <p class="h3 mb-3">Nom : Tony Stark</p>
+                        <p class="h3 mb-3">Métier : Président de Stark Industries</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

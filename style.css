@@ -1,0 +1,28 @@
+body {
+    font-family: 'Marvel', sans-serif;
+}
+
+.navFont {
+    background-color: #ed171e;
+}
+
+.widthLogo {
+    width: 8rem;
+    height: auto;
+}
+
+.test {
+    border: 3px double #ed171e;
+}
+
+.marvelTable {
+    border-color: #ed171e;
+}
+
+.btn {
+    background-color: #ed171e;
+}
+
+.centerText {
+    vertical-align: middle;
+}
