@@ -16,27 +16,35 @@
 </head>
 
 <body>
-  <header class="mb-5">
-    <img class="w-100" src="img/avengers.jpg" alt="Bannière Avengers">
-    <nav class="navbar navbar-expand-lg navFont">
-      <img class="widthLogo m-auto" src="img/Logo.png" alt="Logo Marvel">
-    </nav>
+  <header>
+      <div class="d-none d-lg-block mb-5">
+        <img class="w-100" src="img/avengers.jpg" alt="Bannière Avengers">
+        <nav class="navbar navbar-expand-lg navFont p-0">
+          <img class="widthLogolg m-auto" src="img/Logo.png" alt="Logo Marvel">
+        </nav>
+      </div>
+      <div class="d-lg-none d-md-block mb-4">
+        <img class="w-100" src="img/avengersMini.jpg" alt="Bannière Avengers">
+        <nav class="navbar navbar-expand-lg navFont p-0">
+          <img class="widthLogomd m-auto" src="img/Logo.png" alt="Logo Marvel">
+        </nav>
+      </div>
   </header>
 
   <div class="container">
     <div class="row">
-      <div class="col-4 text-center test">
-        <p class="h1 mb-3">Deadpool</p>
+      <div class="col-lg-4 text-center test m-auto d-none d-lg-block">
+        <p class="h1 mb-3 pt-2">Deadpool</p>
         <img class="img-fluid mb-3" src="img/profil.jpg" alt="Photo de profil Deadpool">
         <p class="h3 mb-3">Super pouvoir : Sens de la répartie</p>
         <p class="h3 mb-3">Nom : Wade Wilson</p>
         <p class="h3 mb-3">Métier : Mercenaire</p>
       </div>
-      <div class="col-8">
-        <table class="table table-bordered table-dark table-hover marvelTable">
+      <div class="col-lg-8">
+        <table class="table table-bordered table-dark table-hover">
           <thead>
             <tr>
-              <th colspan="3" class="text-center">Liste des supers héros</th>
+              <th colspan="3" class="text-center h2">Liste des supers héros</th>
             </tr>
           </thead>
           <tbody>
@@ -47,16 +55,16 @@
                   data-bs-target="#ironManModal">+d'infos</button>
                 <div class="modal fade" id="ironManModal" tabindex="-1" aria-labelledby="ironManModalLabel"
                   aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                      <div class="modal-header">
+                      <div class="modal-header p-1">
                         <div class="modal-title text-center h1 m-auto" id="ironManModalLabel">Iron Man</div>
                       </div>
-                      <div class="modal-body">
-                        <img class="mb-3" src="img/ironMan.jpg" alt="Photo de Iron Man">
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/ironMan.jpg" alt="Photo de Iron Man">
                         <p class="h3 mb-3">Super pouvoir : Armure</p>
                         <p class="h3 mb-3">Nom : Tony Stark</p>
-                        <p class="h3 mb-3">Métier : Président de Stark Industries</p>
+                        <p class="h3">Métier : Président de Stark Industries</p>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
@@ -66,11 +74,259 @@
                 </div>
               </td>
             </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/captainAmericaMini.jpg" alt="Photo miniature de Captain America" </td>
+              <td width="70%" class="h3">Captain America</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#captainAmericaModal">+d'infos</button>
+                <div class="modal fade" id="captainAmericaModal" tabindex="-1" aria-labelledby="captainAmericaModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="captainAmericaModalLabel">Captain America</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/captainAmerica.jpg" alt="Photo de Captain America">
+                        <p class="h3 mb-3">Super pouvoir : Super-soldat</p>
+                        <p class="h3 mb-3">Nom : Steeve Rogers</p>
+                        <p class="h3">Métier : Soldat</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/thorMini.jpg" alt="Photo miniature de Thor" </td>
+              <td width="70%" class="h3">Thor</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#thorModal">+d'infos</button>
+                <div class="modal fade" id="thorModal" tabindex="-1" aria-labelledby="thorModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="thorModalLabel">Thor</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/thor.jpg" alt="Photo de Thor">
+                        <p class="h3 mb-3">Super pouvoir : Dieu du Tonnerre</p>
+                        <p class="h3 mb-3">Nom : Thor fils d'Odin</p>
+                        <p class="h3">Métier : Dieu de Midgard</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/hulkMini.jpg" alt="Photo miniature de Hulk" </td>
+              <td width="70%" class="h3">Hulk</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#hulkModal">+d'infos</button>
+                <div class="modal fade" id="hulkModal" tabindex="-1" aria-labelledby="hulkModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="hulkModalLabel">Hulk</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/hulk.jpg" alt="Photo de Hulk">
+                        <p class="h3 mb-3">Super pouvoir : Fracasse</p>
+                        <p class="h3 mb-3">Nom : Bruce Banner</p>
+                        <p class="h3">Métier : Physicien</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/spidermanMini.jpg" alt="Photo miniature de Spiderman" </td>
+              <td width="70%" class="h3">Spiderman</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#spidermanModal">+d'infos</button>
+                <div class="modal fade" id="spidermanModal" tabindex="-1" aria-labelledby="spidermanModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="spidermanModalLabel">Spiderman</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/spiderman.jpg" alt="Photo de Spiderman">
+                        <p class="h3 mb-3">Super pouvoir : Toiles</p>
+                        <p class="h3 mb-3">Nom : Peter Parker</p>
+                        <p class="h3">Métier : Photographe</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/doctorStrangeMini.jpg" alt="Photo miniature de Doctor Strange" </td>
+              <td width="70%" class="h3">Doctor Strange</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#doctorStrangeModal">+d'infos</button>
+                <div class="modal fade" id="doctorStrangeModal" tabindex="-1" aria-labelledby="doctorStrangeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="doctorStrangeModalLabel">Doctor Strange</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/doctorStrange.jpg" alt="Photo de Doctor Strange">
+                        <p class="h3 mb-3">Super pouvoir : Magie</p>
+                        <p class="h3 mb-3">Nom : Stephen Strange</p>
+                        <p class="h3">Métier : Médecin</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/captainMarvelMini.jpg" alt="Photo miniature de Captain Marvel" </td>
+              <td width="70%" class="h3">Captain Marvel</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#captainMarvelModal">+d'infos</button>
+                <div class="modal fade" id="captainMarvelModal" tabindex="-1" aria-labelledby="captainMarvelModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="captainMarvelModalLabel">Captain Marvel</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/captainMarvel.jpg" alt="Photo de Captain Marvel">
+                        <p class="h3 mb-3">Super pouvoir : Cosmique</p>
+                        <p class="h3 mb-3">Nom : Carol Danvers</p>
+                        <p class="h3">Métier : Pilote US Air Force</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/grootMini.jpg" alt="Photo miniature de Baby Groot" </td>
+              <td width="70%" class="h3">Baby Groot</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#grootModal">+d'infos</button>
+                <div class="modal fade" id="grootModal" tabindex="-1" aria-labelledby="grootModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="grootModalLabel">Baby Groot</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/groot.jpg" alt="Photo de Baby Groot">
+                        <p class="h3 mb-3">Super pouvoir : Je s'appelle Groot</p>
+                        <p class="h3 mb-3">Nom : Je s'appelle Groot</p>
+                        <p class="h3">Métier : Je s'appelle Groot</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/rocketMini.jpg" alt="Photo miniature de Rocket" </td>
+              <td width="70%" class="h3">Rocket</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#rocketModal">+d'infos</button>
+                <div class="modal fade" id="rocketModal" tabindex="-1" aria-labelledby="rocketModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="rocketModalLabel">Rocket</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/rocket.jpg" alt="Photo de Rocket">
+                        <p class="h3 mb-3">Super pouvoir : Raton-Laveur</p>
+                        <p class="h3 mb-3">Nom : Rocket Raccoon</p>
+                        <p class="h3">Métier : Chasseur de primes</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText d-lg-none d-md-block">
+              <td width="10%" class="text-center"><img src="img/deadpoolMini.jpg" alt="Photo miniature de Deadpool" </td>
+              <td width="70%" class="h3">Deadpool</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#deadpoolModal">+d'infos</button>
+                <div class="modal fade" id="deadpoolModal" tabindex="-1" aria-labelledby="deadpoolModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="deadpoolModalLabel">Deadpool</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/deadpool.jpg" alt="Photo de Deadpool">
+                        <p class="h3 mb-3">Super pouvoir : Sens de la répartie</p>
+                        <p class="h3 mb-3">Nom : Wade Wilson</p>
+                        <p class="h3">Métier : Mercenaire</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </div>
     </div>
   </div>
+
+  <footer class="text-center navFont h4 pt-3 pb-1 mt-4 mb-0">
+    <p>Designed by Super-TiFlo</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

@@ -6,17 +6,23 @@ body {
     background-color: #ed171e;
 }
 
-.widthLogo {
-    width: 8rem;
+.navFontmd {
+    background-color: #ed171e;
+    height: 3rem;
+}
+
+.widthLogolg {
+    width: 10rem;
+    height: auto;
+}
+
+.widthLogomd {
+    width: 7rem;
     height: auto;
 }
 
 .test {
-    border: 3px double #ed171e;
-}
-
-.marvelTable {
-    border-color: #ed171e;
+    border: 3px solid #ed171e;
 }
 
 .btn {
