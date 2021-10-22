@@ -16,22 +16,22 @@
 </head>
 
 <body>
-  <header class="d-none d-lg-block mb-5">
+  <header class="d-none d-lg-block">
     <img class="w-100" src="img/avengers.jpg" alt="Bannière Avengers">
-    <nav class="navbar navbar-expand-lg navFont p-0">
-      <img class="widthLogolg m-auto" src="img/Logo.png" alt="Logo Marvel">
-    </nav>
   </header>
-  <header class="d-lg-none d-md-block mb-4 sticky-top" aria-hidden="true">
+  <header class="d-lg-none d-md-block" aria-hidden="true">
     <img class="w-100" src="img/avengersMini.jpg" alt="Bannière Avengers">
-    <nav class="navbar navbar-expand-lg navFont p-0">
-      <img class="widthLogomd m-auto" src="img/Logo.png" alt="Logo Marvel">
-    </nav>
   </header>
+  <nav class="d-none d-lg-block text-center mb-5 navbar navbar-expand-lg navFont p-0">
+    <img class="widthLogolg m-auto" src="img/Logo.png" alt="Logo Marvel">
+  </nav>
+  <nav class="d-lg-none d-md-block text-center mb-4 navbar navbar-expand-lg navFont p-0 sticky-top" aria-hidden="true">
+    <img class="widthLogomd m-auto" src="img/Logo.png" alt="Logo Marvel">
+  </nav>
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 text-center m-auto d-none d-lg-block">
+      <div class="col-lg-4 text-center d-none d-lg-block">
         <table class="table table-bordered table-dark m-0 p-0">
           <tr>
             <td class="h1 mb-3 pt-2">Deadpool</td>
@@ -303,6 +303,34 @@
                         <p class="h3 mb-3">Super pouvoir : Raton-Laveur</p>
                         <p class="h3 mb-3">Nom : Rocket Raccoon</p>
                         <p class="h3">Métier : Chasseur de primes</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="centerText">
+              <td width="10%" class="text-center"><img src="img/draxMini.jpg" alt="Photo miniature de Drax" </td>
+              <td width="70%" class="h3 d-none d-lg-table-cell">Drax</td>
+              <td width="70%" class="h3 d-lg-none d-md-table-cell text-center">Drax</td>
+              <td width="20%" class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#draxModal">+d'infos</button>
+                <div class="modal fade" id="draxModal" tabindex="-1" aria-labelledby="draxModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header p-1">
+                        <div class="modal-title text-center h1 m-auto" id="draxModalLabel">Drax</div>
+                      </div>
+                      <div class="modal-body pb-0">
+                        <img class="mb-2 img-fluid" src="img/drax.png" alt="Photo de Drax">
+                        <p class="h3 mb-3">Super pouvoir : Invisibilité</p>
+                        <p class="h3 mb-3">Nom : Drax le Destructeur</p>
+                        <p class="h3">Métier : Agent immobilier</p>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn text-center m-auto" data-bs-dismiss="modal">Fermer</button>
